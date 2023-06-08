@@ -39,7 +39,7 @@ const menu_tree = reactive([
         ]
     },
     {
-        label: "LIST",
+        label: "SETTING",
         icon: "menu",
         children: [
             {
