@@ -10,10 +10,15 @@
             <div class="left">
                 <i v-if="icon" class="material-symbols-outlined"> {{ icon }} </i>
                 <span class="menu-header">{{ label }}</span>
+                {{ data }}
             </div>
             <div v-if="data" class="right">
                 <i class="material-symbols-outlined expand" :class="{expanded: expanded}"> chevron_right </i>
-            </div>                        
+            </div>
+            <!-- <div v-else-if="data"
+                @click="route()"
+            >
+            </div> -->
         </div>
         <div 
             class="item-container" 
@@ -41,6 +46,7 @@ const showChildren = ref(false);
 const expanded = ref(false);
 const containerHeight = ref(0);
 const container = ref(null);
+
 const props = defineProps({
     label: {
         type: String,
@@ -83,6 +89,11 @@ const toggleMenu = () => {
         
     }
 }
+
+const route = () => {
+    console.log('11');
+}
+
 </script>
 <style lang="css">
 .menu-header {

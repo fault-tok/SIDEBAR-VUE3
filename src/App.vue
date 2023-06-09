@@ -1,27 +1,13 @@
-<template lang="">
+<template>
+  <router-view></router-view>
   <div>
     <Menu></Menu>
   </div>
 </template>
 <script setup>
-import Menu from './components/Menu.Vue';
+import Menu from './components/Menu.vue';
 
 </script>
 <style lang="">
 
 </style>
-
-<!-- <template>
-  <div>
-    <Menu></Menu>
-  </div>
-</template>
-
-<script setup>
-import Menu from './components/Menu.Vue';
-
-</script>
-
-<style lang="css">
-  
-</style> -->

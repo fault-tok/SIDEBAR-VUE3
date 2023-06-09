@@ -21,10 +21,11 @@ const menu_tree = reactive([
         icon: "menu",
         children: [
             {
-                label: "level 1.1",
+                label: "level 1.1",                
                 children: [
                     {
-                        label: "level 1.1.1"
+                        label: "level 1.1.1",
+                        patg: "2"
                     }
                 ]
             },
